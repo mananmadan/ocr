@@ -34,9 +34,11 @@
     - We then pass to the Tesseract OCR which uses an LSTM Model to get the output of the given input image.
 
 - Output
-    - Email :<img src="email.jpeg" alt="Input Image" width="200" height="25">
-    - Contact Number :<img src="contact-number.jpeg" alt="Input Image" width="206" height="24"> 
-    - First Name : <img src="first-name.jpeg" alt="Input Image" width="162" height="21"> 
+    - Email :<img src="email.jpeg" alt="Input Image" width="200" height="25"> : MADAN MANANI
+    - Contact Number :<img src="contact-number.jpeg" alt="Input Image" width="206" height="24"> :9963005624
+    - First Name : <img src="first-name.jpeg" alt="Input Image" width="162" height="21"> : RISHIM’ BMADAN
+
+- There are some error's but for the most part it is working satisfactorily!
 ## Model:
 - Tesseract's OCR uses an SOTA LSTM Model to classify the given image
 - It makes sense to use Sequence Model over CNN as the given image is a sequence and we can exploit temporal relation b/w the sequence in the image.
