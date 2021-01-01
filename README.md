@@ -4,8 +4,7 @@
 ## Methods and Techniques Used
 
 1. **Alignment of Input and Template** 
-
-*Get the image clicked by the user , allighn the image to the reference image of the same form stored in our database*
+- *Get the image clicked by the user , allighn the image to the reference image of the same form stored in our database*
 
 |Image Title|Image Preview|
 |-----------|-------------|
@@ -19,16 +18,14 @@
     - After computing the homography matrix I apply that on the Input Image to allighn it to template Image.
 
 2. **Extract ROI(Region of Interest)**
-
-*Extract the ROI from the input image , based on the previously defined co-ordinates for the case of template Images*
+- *Extract the ROI from the input image , based on the previously defined co-ordinates for the case of template Images*
 
 - To do this:
     - I first manually measure the co-ordinates of the ROI's in template image (I have to only do this one time for a type of form)
     - Then I extract the ROI's from the already **alligned** input image
 
 3. **OCR on ROI's**
-
-*Get the ROI's from the previous step and apply preprocessing and pass it to customly configured Tesseract OCR to get the output*
+- *Get the ROI's from the previous step and apply preprocessing and pass it to customly configured Tesseract OCR to get the output*
 
 - To do this:
     - I first apply thresholding to the ROI's and then sharpening and Non-Linear Denoising to get the optimum output from OCR.
