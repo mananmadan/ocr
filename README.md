@@ -14,7 +14,9 @@
 - To do this:
     - I first find ORB features and descriptors in both the images
     - Then I match those features to compute homography matrix
+
     <img src="matches.jpg" alt="Input Image" width="300" height="200">
+
     - After computing the homography matrix I apply that on the Input Image to allighn it to template Image.
 
 2. **Extract ROI(Region of Interest)**
