@@ -22,4 +22,6 @@ roi_y = [(350,375),(316,340),(338,359)]
 ## loop over roi and get the final images
 for i in range(0,len(roi_x)):
     print(roi_name[i]+":") 
+    image = aligned[roi_y[i][0]:roi_y[i][1],roi_x[i][0]:roi_x[i][1],:]
+    cv2.imwrite(roi_name[i]+'.jpeg',image)
     final_predict(aligned[roi_y[i][0]:roi_y[i][1],roi_x[i][0]:roi_x[i][1],:])

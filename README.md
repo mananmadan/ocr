@@ -33,6 +33,10 @@
     - I first apply thresholding to the ROI's and then sharpening and Non-Linear Denoising to get the optimum output from OCR.
     - We then pass to the Tesseract OCR which uses an LSTM Model to get the output of the given input image.
 
+- Output
+    - Email :<img src="email.jpeg" alt="Input Image" width="300" height="300">
+    - Contact Number :<img src="contact-number.jpeg" alt="Input Image" width="300" height="300"> 
+    - First Name : <img src="first-name.jpeg" alt="Input Image" width="300" height="300"> 
 ## Model:
 - Tesseract's OCR uses an SOTA LSTM Model to classify the given image
-- It makes sense to use Sequence Model over CNN as the given image is a sequence and we can exploit temporal relation b/w the image
+- It makes sense to use Sequence Model over CNN as the given image is a sequence and we can exploit temporal relation b/w the sequence in the image.
