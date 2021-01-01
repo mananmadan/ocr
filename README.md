@@ -33,7 +33,7 @@
     - I first apply thresholding to the ROI's and then sharpening and Non-Linear Denoising to get the optimum output from OCR.
     - We then pass to the Tesseract OCR which uses an LSTM Model to get the output of the given input image.
 
-- Output
+- **Output**
     - Email :<img src="email.jpeg" alt="Input Image" width="200" height="25"> : MADAN MANANI
     - Contact Number :<img src="contact-number.jpeg" alt="Input Image" width="206" height="24"> :9963005624
     - First Name : <img src="first-name.jpeg" alt="Input Image" width="162" height="21"> : RISHIM’ BMADAN
